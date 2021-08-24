@@ -133,14 +133,10 @@ export default function PrimarySearchAppBar() {
             />
           </div>
           
-          
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>            
             <Button className={classes.authenticationButton} variant="outlined" color="primary">
               Login
-            </Button>
-            <Button className={classes.authenticationButton} variant="outlined" color="primary">
-              Sign up
             </Button>
           </div>
         </Toolbar>
