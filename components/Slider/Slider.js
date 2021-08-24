@@ -31,16 +31,32 @@ export default function Slider({ slides }) {
     embla.on("select", onSelect);
   }, [embla, setScrollSnaps, onSelect]);
 
+  const slideQuote = [
+    "The libraries you use which are \"Open Source\" will become charged some day :))",
+    "Tired of resolving Node packages version and its dependencies? Use Golang and you don't even need any packages",
+    "Mongo indexing and concurrency control are sucks!!!"
+  ]
+
+
   return (
     <>
       <div className="embla">
         <div className="embla__viewport" ref={viewportRef}>
           <div className="embla__container">
             {slides.map((index) => (
-              <div className="embla__slide" key={index}>
-                <div className="embla__slide__inner" style={{ background: `url("/images/slider/media${index}.svg")` }}>
+              <>
+                <div className="embla__slide" key={index}>
+                  <div className="embla__slide__inner" style={{ background: `url("/images/slider/media${index}.svg")` }}>
+                    <div className="embla_quote">
+                      {slideQuote[index]}
+                      <div className="embla_quote_source">
+                        - some dude (2021) - 
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+                
+              </>
             ))}
           </div>
         </div>

@@ -1,7 +1,6 @@
 .embla {
   position: relative;
   background-color: #f7f7f7;
-  padding: 20px;
   width: 100%;
   height: 100vh;
   margin-left: auto;
@@ -69,11 +68,11 @@
   top: 50%;
   transform: translateY(-50%);
   border: 0;
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   justify-content: center;
   align-items: center;
-  fill: #1bcacd;
+  fill: #1cfbff;
   padding: 0;
 }
 
@@ -88,11 +87,11 @@
 }
 
 .embla__button--prev {
-  left: 27px;
+  left: 12rem;
 }
 
 .embla__button--next {
-  right: 27px;
+  right: 12rem;
 }
 
 .embla__dots {
@@ -126,6 +125,25 @@
 }
 
 .embla__dot.is-selected:after {
-  background-color: #1bcacd;
+  background-color: #f6cfff;
   opacity: 1;
+}
+.embla_quote{
+  color: #f6cfff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Patrick Hand', cursive;
+  font-size: 2rem;
+}
+.embla_quote_source{
+  color: #f6cfff;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(0%, 50%);
+  font-family: 'Patrick Hand', cursive;
+  font-size: 2rem;
+
 }
